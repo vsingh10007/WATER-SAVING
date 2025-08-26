@@ -1,0 +1,57 @@
+/* --- Tracker Section --- */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8fcff;
+      color: #003366;
+    }
+    .tracker-container {
+      text-align: center;
+    }
+    .tracker-form {
+      margin-bottom: 30px;
+    }
+    .tracker-form input, 
+    .tracker-form select, 
+    .tracker-form button {
+      padding: 10px 15px;
+      margin: 8px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    .tracker-form button {
+      background: linear-gradient(45deg, #00bfff, #0077cc);
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .tracker-form button:hover {
+      background: linear-gradient(45deg, #0077cc, #004080);
+    }
+
+    /* Water Tank Progress */
+    .water-tank {
+      position: relative;
+      width: 200px;
+      height: 300px;
+      border: 4px solid #0077cc;
+      border-radius: 20px;
+      margin: 20px auto;
+      overflow: hidden;
+      background: #e6f7ff;
+    }
+    .water-fill {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 0;
+      background: linear-gradient(to top, #00bfff, #66ccff);
+      transition: height 0.8s ease;
+    }
+    .tank-label {
+      margin-top: 15px;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
